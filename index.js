@@ -2,11 +2,21 @@
 //http://api.openweathermap.org/data/2.5/weather?q=Bengaluru&appid=4e8fe55b900263c5f83603ed631e15ad
 
 function getWeatherDetails() {
-    var headURL = 'http://api.openweathermap.org/data/2.5/weather?q';
+    var headURL = 'http://api.openweathermap.org/data/2.5/weather?q=';
     var tailURL ='&appid=4e8fe55b900263c5f83603ed631e15ad';
     var placename = document.getElementById('placename').value;
-    var finalURL = `${headURL}=${placename}${tailURL}`;
+    var finalURL = `${headURL}${placename}${tailURL}`;
 
+    //promises
+    fetch(finalURL).then(function (data) {
+            console.log(data);
+
+        }).catch(function(error){
+        console.log(error);
+    });
+}
+
+    /*  AJAX call
     $.ajax({
         url: finalURL,
         success: function(data){
@@ -16,7 +26,8 @@ function getWeatherDetails() {
             console.log(error);
         }
     });
-}
+    */
+//}
 
 
 /*
