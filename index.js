@@ -8,12 +8,24 @@ function getWeatherDetails() {
     var finalURL = `${headURL}${placename}${tailURL}`;
 
     //promises
+    //service
+    /*
     fetch(finalURL).then(function (data) {
             console.log(data);
 
         }).catch(function(error){
         console.log(error);
     });
+    */
+   //To display the response
+   fetch(finalURL).then(function (response) {
+    return response.json();
+}).then(function(data){
+    console.log(data);
+}).catch(function(error){
+console.log(error);
+});
+
 }
 
     /*  AJAX call
