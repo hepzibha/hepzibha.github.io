@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Date and Time</h1>
+<!-- innerHTML property-->
+<button type="button"
+onclick="document.getElementById('date_time_button').innerHTML = Date()">
+Click and see Date and Time</button>
+
+
+<p id="date_time_button"></p>
+
+<br>
+<br>
+
+<button type="button"
+onclick=alert(Date())>
+Click to alert Date and Time</button>
+
+<br>
+<br>
+
+
+<button type="button"
+onclick="functionCall()">
+Click to call the function to show the date and Time</button>
+
+<p id="date_time_button1">Date display here</p>
+
+
+<!--JavaScript function to show the date and time-->
+
+<script>
+function functionCall() {
+   document.getElementById("date_time_button1").innerHTML=Date();
+}
+</script>
+
+</body>
+</html>
