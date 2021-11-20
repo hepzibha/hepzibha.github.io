@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Display Current Date and Time in Html using Javascript</title>
+  <style>
+      button {
+          background-color: blue;
+          font-size: 50px;
+          width: 250px;
+
+      }
+button:hover{
+    background-color: chartreuse;
+}
+  </style>
+</head>
+<body>
+  <h1>Hello!</h1>
+ 
+  <h2 id="displayDateTime"></h2>
+</body>
+<button onclick="myFunction()">Click me!</button>
+
+  <script type="text/javascript">
+       function myFunction() {
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+   
+  document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
+       }
+  </script>
+</html>

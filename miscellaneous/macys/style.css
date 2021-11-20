@@ -1,0 +1,82 @@
+/*Downloaded from https://www.codeseek.co/vanderdrilu/leaderboard-react-XYrOKQ */
+table.tablesorter {
+    font-family: arial;
+    background-color: #CDCDCD;
+    margin: 10px 0pt 15px;
+    font-size: 8pt;
+    width: 100%;
+    text-align: left;
+  }
+  
+  table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #e6EEEE;
+    border: 1px solid #FFF;
+    font-size: 8pt;
+    padding: 4px;
+  }
+  
+  table.tablesorter thead tr .header {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.30.4/css/images/black-unsorted.gif");
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+  }
+  
+  table.tablesorter tbody td {
+    color: #3D3D3D;
+    padding: 4px;
+    background-color: #FFF;
+    vertical-align: top;
+  }
+  
+  table.tablesorter tbody tr.odd td {
+    background-color: #F0F0F6;
+  }
+  
+  table.tablesorter thead tr .headerSortUp {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.30.4/css/images/black-asc.gif");
+  }
+  
+  table.tablesorter thead tr .headerSortDown {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.30.4/css/images/black-desc.gif");
+  }
+  
+  table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+  }
+  
+  img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    border-color: greenyellow;
+  }
+  
+  .shadowbox {
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.6), -3px 4px 12px rgba(0, 0, 0, 0.5), -4px 6px 15px rgba(0, 0, 0, 0.4), -5px 8px 18px rgba(0, 0, 0, 0.3);
+    margin: 50px;
+    padding: 5px;
+  }
+  
+  .boxshadowinset {
+    box-shadow: inset -1px -3px 20px 5px rgba(0, 0, 0, 0.75);
+  }
+  
+  h3 {
+    text-shadow: 1px 1px 5px 5px white;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: darkslateblue;
+    text-align: center;
+  }
+  
